@@ -15,6 +15,7 @@ permalink: /tags.html
   {% endunless %}{% endfor %}
 </ul>
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+
 {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
    <h2 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h2>
    <ul>

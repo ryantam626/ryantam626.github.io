@@ -1,9 +1,10 @@
 # Site
 title: Ryan Tam's Machine Learning Blog
 description: A blog on Machine Learning, Maths and alike.
+# url: http://ryantam626.github.io
 url: http://ryantam626.github.io
 logo: halve.png                                       # Site logo
-locale: en_US
+locale: en_UK
 
 # Left Block Images
 background:
@@ -29,13 +30,14 @@ sass:
 #google-analytics: UA-XXXXX-Y
 
 # Social Links
-#email:             email
+email:             ryantam626@hotmail.com
 #google.plus:        username
-twitter:            username
+# twitter:            username
 #facebook:           username
-github:             username
-stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+github:             ryantam626
+bitbucket:          ryantam626
+# stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+linkedin:          hin-hong-ryan-tam-0a922786
 #xing:              username
 #instagram:          username
 #lastfm:            username
@@ -52,7 +54,7 @@ stackoverflow:     123456/username   from a "http://stackoverflow.com/users/1234
 #keybase:           username
 #xmpp:              username@server.com
 #hackernews:        username
-behance:           username
+# behance:           username
 
 # Gems
 gems:

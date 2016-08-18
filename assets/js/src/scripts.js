@@ -6,13 +6,6 @@ $(function() {
   $(".content").fitVids();
 });
 
-// Projects Menu
-$('.projects-menu-icon').click(function() {
-  $('html').toggleClass('no-scroll');
-  $(this).toggleClass('active');
-  $('.overlay').toggleClass('show');
-});
-  
 // All others
 $(document).ready(function() {
 	$('.image-popup').magnificPopup({
