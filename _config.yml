@@ -3,6 +3,7 @@ title: Ryan Tam's Machine Learning Blog
 description: A blog on Machine Learning, Maths and alike.
 # url: http://ryantam626.github.io
 url: http://ryantam626.github.io
+baseurl: /blog # the subpath of your site, e.g. /blog/
 logo: halve.png                                       # Site logo
 locale: en_UK
 
