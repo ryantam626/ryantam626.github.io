@@ -1,9 +1,9 @@
 # Site
 title: Ryan Tam's Machine Learning Blog
 description: A blog on Machine Learning, Maths and alike.
+# url: http://ryantam626.github.io
 url: https://ryantam626.github.io
-# url: http://localhost:4000
-# baseurl: /blog # the subpath of your site, e.g. /blog/
+baseurl: /blog # the subpath of your site, e.g. /blog/
 logo: halve.png                                       # Site logo
 locale: en_UK
 
