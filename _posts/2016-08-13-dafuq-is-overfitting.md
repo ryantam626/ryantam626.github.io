@@ -14,7 +14,7 @@ tags:
 
 Overfitting, a term to discribe the situation where a model describes random error/noise in the data on top of modelling the underlying relationship within the data. 
 
-Model that has been overfitted usually has a poor predictive performance on new unseen data, because if the error/noise is truly random, chances are that you are never going to get similar instances as the training data.
+Model that has been overfitted usually has a poor predictive performance on new unseen data, because if the error/noise is truly random, chances are that you are never going to get exactly the same instances as the training data.
 
 ## Example
 
@@ -125,9 +125,11 @@ sum(nineth.order.model$residuals^2)
 The overlayed plot of all these models together is:-
 
 {% highlight r %}
-everything <- rbind(linear.model.pred.df, third.order.model.pred.df, sixth.order.model.pred.df, nineth.order.model.pred.df)
+everything <- rbind(linear.model.pred.df, third.order.model.pred.df,
+                    sixth.order.model.pred.df, nineth.order.model.pred.df)
 everything$order <- as.factor(everything$order)
-ggplot() + geom_line(data=sin.df, aes(x=x, y=y)) + geom_line(data=everything, aes(x=x, y=y, colour=order)) + 
+ggplot() + geom_line(data=sin.df, aes(x=x, y=y)) +
+  geom_line(data=everything, aes(x=x, y=y, colour=order)) + 
   geom_point(data=train.df, aes(x=x, y=y), colour='red') 
 {% endhighlight %}
 
@@ -139,6 +141,13 @@ On the other end of the spectrum, we have the linear model, it has also failed t
 
 ## Detecting Overfit
 
+In this polynomail regression problem, visualisation of the model is straight forward, and overfitting can be spotted visually. What if the model is something more complicated like a **decision tree** or **nerual network**? These models can't be visualised easily, so how might one go about detecting overfit with such models?
+
+As mentioned before, overfitted models has poor predictive performance on new unseen data; from this, we can spot effects of overfitting by comparing the training error and test error accross different models.
+
+![plot of chunk detect.overfit](/assets/Rfig/detect.overfit-1.svg)
+
+Here, negative RSS can be thought of as an analogy of accuracy, the higher it is the better. We note that the negative RSS goes up as order goes up for the training data, similar trend cannot be established for the test data, and this implies overfit!
 
 ## Dealing with Overfit
 
