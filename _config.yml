@@ -1,8 +1,8 @@
 # Site
-title: Ryan Tam's Machine Learning Blog
-description: A blog on Machine Learning, Maths and alike.
+title: Ryan Tam's Site
+description: Not even sure why you are here (shrug).
 url: https://ryantam626.github.io
-# url: http://localhost:400
+# url: http://localhost:4000
 # baseurl: /blog # the subpath of your site, e.g. /blog/
 logo: halve.png                                       # Site logo
 locale: en_UK
@@ -36,7 +36,7 @@ email:             ryantam626@hotmail.com
 # twitter:            username
 #facebook:           username
 github:             ryantam626
-bitbucket:          ryantam626
+# bitbucket:          ryantam626
 # stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 linkedin:          hin-hong-ryan-tam-0a922786
 #xing:              username
