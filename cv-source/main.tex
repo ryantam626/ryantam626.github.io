@@ -1,0 +1,125 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.81, top=2cm, bottom=2cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Hin Hong (Ryan)}{Tam}
+% \title{Résumé}                               % optional, remove / comment the line if not wanted
+\address{705 Sculpture House, 4 Killick Way}{E1 3FE London}{United Kingdom}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone{+44 (0)7413668898}                   % optional, remove / comment the line if not wanted
+\email{ryantam626@gmail.com}                                % optional, remove / comment the line if not wanted
+\homepage{github.com/ryantam626}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace{-35px}
+
+\section{Experience}
+
+\subsection{Vocational}
+\cventry{10/2016--Present}{Data Scientist / Software Engineer}{Smarkets}{London}{}{%
+\begin{itemize}%
+\item Built anti money laundering system using Python;
+\item Built system to detect problem gambling patterns using Python;
+\item Built data pipeline with Python insuring data consistency and producing metrics consumed by accounting systems;
+\item Maintaining and extending various other Python micro-services (Flask) and providing additional tooling;
+\end{itemize}}
+
+% \cventry{04/2015--06/2016}{Technical Partner / Python Django Developer / Ionic Framework Developer}{Aboard}{London}{}{%
+% \begin{itemize}%
+% \item Built a web service using Python (Django) that powers the mobile application;
+% \item Rewrote part of the front-end written by other developers to improve performance; 
+% \end{itemize}}
+
+\cventry{06/2014--08/2014}{Summer Analyst}{HSBC Bank Plc.}{London}{}{%
+\begin{itemize}%
+\item Built and maintained reconciliation systems as per project manager’s requests using PL/SQL and VBA;
+\item Extended functionality to the Excel sheet that generates control files for SQL*Loader which in turn streamlined the process of loading data into the database for reconciliations;
+\end{itemize}}
+
+\subsection{Selected Projects}
+\cventry{07/2018--Present}{Open Source Project}{JupyterLab Extensions}{Personal}{}{
+\begin{itemize}
+\item Developed a JupyterLab extension to apply Black (a Python code formatter) to code within codecell;
+\item Developed a JupyterLab extension to support a slightly opinionated Sublime Text keybinding within codecell;
+\end{itemize}
+}
+
+
+\cventry{05/2016--09/2016}{Individual Project with Stratagem Technologies Ltd.}{State-Aware TrueSkill For Tennis Match Prediction}{Imperial}{}{
+\begin{itemize}
+\item Compiled a more detailed report on the TrueSkill model than the original technical report;
+\item Implemented the TrueSkill model in Cython and Python;
+\item Extended the TrueSkill model to allow it to learn from features of the event in question;
+\end{itemize}
+}
+
+\cventry{01/2015--06/2015}{Individual Academic Research Project}{Modelling Loss Given Default And Truncated Support Vector Regression }{Imperial}{}{%
+\begin{itemize}%
+\item Reviewed several previous publications on modelling Loss Given Default;
+\item Implemented Support Vector Regression in MATLAB and compared it against other methods on a real dataset;
+\item Explored the possibility of Truncated Support Vector Regression, reported some promising preliminary results;
+\end{itemize}}
+
+% \cventry{07/2014--Present }{Individual Project}{Modelling Horse Racing}{Personal}{}{%
+% \begin{itemize}%
+% \item Wrote a web scraper that store horse racing data into local MySQL database using Java;
+% \item Experimented a few models that does not yield concrete predictions that could be used;
+% \item Leveraging the experience gained in building Aboard, wrote an interactive application to scrape data into a Neo4j database in Python to speed up development cycle of new models;
+% \end{itemize}}
+
+\section{Computer Skills}
+\cvitem{Selected Proficient Languages}{Python, MATLAB, R, JavaScript/TypeScript, C}
+\cvitem{Selected Frameworks and Libraries}{NumPy, SciPy, Pandas, Luigi, Apache Spark}
+\cvitem{Operating Systems}{Linux, Windows}
+
+\section{Education}
+\cventry{10/2015--09/2016}{MSc. Computer Science (Machine Learning)}{Imperial College London}{London}{\textbf{Merit}}{}  
+\cventry{10/2012--06/2015}{BSc. Mathematics with Statistics for Finance}{Imperial College London}{London}{\textbf{First Class Honours}}{}  
+
+\section{References}
+\begin{itemize}
+\item Dr. Tony Bellotti  \hfill Department of Mathematics, Imperial College London, London SW7 2AZ
+\item Dr. Marc Deisenroth \hfill Department of Computing, Imperial College London, London SW7 2AZ
+\item Prof. Richard Thomas \hfill Department of Mathematics, Imperial College London, London SW7 2AZ
+\end{itemize}
+
+\clearpage
+
+\end{document}
